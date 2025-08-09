@@ -47,7 +47,7 @@ export default function Cart(){
                         <p>Your cart is empty</p>
                 }
             </div>
-            <div className="position-sticky" style={{top:'80px', width:'min(100%,400px)',backgroundColor:'#ededed', borderRadius:'10px', padding:'10px'}}>
+            <div className="position-sticky" style={{top:'100px', width:'min(100%,400px)',backgroundColor:'#ededed', borderRadius:'10px', padding:'10px'}}>
                 <h4>Order Summary:</h4>
                 <div style={{display:'flex',flexDirection:'column', alignItems:'flex-end'}}>
                     {
@@ -63,10 +63,10 @@ export default function Cart(){
                 <hr />
                 <div style={{display:'flex', justifyContent:'space-between'}}>
                     <h3>Grand Total:</h3>
-                    <p style={{fontWeight:'bold'}}>{grandTotal.toFixed(2)}</p>
+                    <p style={{fontWeight:'bold'}}>$ {grandTotal.toFixed(2)}</p>
                 </div>
                 
-                <button disabled={grandTotal>0 ? false : true} className="btn btn-dark" style={{width:'100%',marginTop:'20px', borderRadius:'100px'}}>Proceed to Checkout</button>
+                <button disabled={grandTotal>0 ? false : true} className="btn btn-danger" style={{width:'100%',marginTop:'20px', borderRadius:'100px'}}>Proceed to Checkout</button>
             </div>
         </div>
         

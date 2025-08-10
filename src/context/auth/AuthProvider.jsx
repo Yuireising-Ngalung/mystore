@@ -3,10 +3,10 @@ import { AuthContext } from "./AuthContext";
 
 export default function AuthProvider({children}){
 
-    const [isLogin, setIsLogin] = useState(false);
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
 
 
-    return(<AuthContext.Provider value={{isLogin, setIsLogin}}>
+    return(<AuthContext.Provider value={{isAuthenticated, setIsAuthenticated}}>
         {children}
     </AuthContext.Provider>)
 }

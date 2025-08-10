@@ -88,7 +88,7 @@ export default function LoginSingup(){
                     <input 
                         type="password" 
                         className="form-control" 
-                        placeholder="enter username" 
+                        placeholder="enter password" 
                         id="password"
                         name="password"
                         value={password}
